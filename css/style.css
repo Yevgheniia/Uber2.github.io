@@ -1,0 +1,979 @@
+@charset "UTF-8";
+/* line 2, ../../Петриченко обучение/Uber/sass/style.sass */
+* {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* line 1, ../../Петриченко обучение/Uber/sass/_general.sass */
+header {
+  position: relative;
+  height: 50px;
+}
+
+/* line 5, ../../Петриченко обучение/Uber/sass/_general.sass */
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  background-color: #212121;
+  z-index: 5;
+}
+
+/* line 12, ../../Петриченко обучение/Uber/sass/_general.sass */
+.hamburger {
+  display: none;
+}
+
+/* line 15, ../../Петриченко обучение/Uber/sass/_general.sass */
+.menu {
+  display: flex;
+  justify-content: space-between;
+  padding: 13px 70px;
+  margin: 0;
+  list-style-type: none;
+}
+
+/* line 21, ../../Петриченко обучение/Uber/sass/_general.sass */
+.menu_link {
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: 300;
+}
+
+/* line 25, ../../Петриченко обучение/Uber/sass/_general.sass */
+.menu_item {
+  border-right: 2px dotted black;
+  padding-right: 28px;
+}
+
+/* line 28, ../../Петриченко обучение/Uber/sass/_general.sass */
+.menu_item:last-child {
+  border-right: none;
+}
+
+/* line 30, ../../Петриченко обучение/Uber/sass/_general.sass */
+.subheader {
+  position: absolute;
+  top: 50px;
+  width: 100%;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* line 36, ../../Петриченко обучение/Uber/sass/_general.sass */
+.subheader_logo {
+  display: block;
+  max-width: 100%;
+  margin-top: 16px;
+}
+
+/* line 40, ../../Петриченко обучение/Uber/sass/_general.sass */
+.subheader_official {
+  margin-top: 6px;
+  opacity: 0.5;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+/* line 46, ../../Петриченко обучение/Uber/sass/_general.sass */
+.subheader_call {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 300;
+  margin-top: 19px;
+  text-align: right;
+}
+
+/* line 52, ../../Петриченко обучение/Uber/sass/_general.sass */
+.subheader_phone {
+  display: block;
+  margin-top: 8px;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: right;
+  line-height: 12px;
+}
+
+/* line 61, ../../Петриченко обучение/Uber/sass/_general.sass */
+.subheader_btn {
+  margin-top: 19px;
+  width: 172px;
+  height: 46px;
+  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../Петриченко обучение/Uber/sass/_mixins.sass */
+.subheader_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 78, ../../Петриченко обучение/Uber/sass/_general.sass */
+.promo {
+  min-height: 800px;
+  background: url("../img/Background/uber_bg.png") center center/cover no-repeat;
+  padding: 150px 0 135px 0;
+}
+
+/* line 82, ../../Петриченко обучение/Uber/sass/_general.sass */
+.promo_header {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 60px;
+  line-height: 60px;
+  margin: 0;
+  text-align: center;
+}
+
+/* line 90, ../../Петриченко обучение/Uber/sass/_general.sass */
+.promo_subheader {
+  color: #ffffff;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 36px;
+  line-height: 36px;
+  margin: 0;
+  margin-top: 22px;
+  text-align: center;
+}
+
+/* line 99, ../../Петриченко обучение/Uber/sass/_general.sass */
+.promo_descr {
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  margin-top: 23px;
+}
+
+/* line 106, ../../Петриченко обучение/Uber/sass/_general.sass */
+.promo_btn {
+  display: block;
+  margin: 118px auto 0 auto;
+  width: 259px;
+  height: 63px;
+  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  border: none;
+  border-radius: 4px;
+  background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+/* line 2, ../../Петриченко обучение/Uber/sass/_mixins.sass */
+.promo_btn:hover {
+  background-image: none;
+  background-color: #1eacc7;
+}
+
+/* line 121, ../../Петриченко обучение/Uber/sass/_general.sass */
+.label {
+  display: block;
+  margin: 0 auto;
+  height: 24px;
+  width: 112px;
+  padding: 5px 12px;
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 133, ../../Петриченко обучение/Uber/sass/_general.sass */
+.label_white {
+  background-color: white;
+  color: #070716;
+}
+
+/* line 136, ../../Петриченко обучение/Uber/sass/_general.sass */
+.subtitle {
+  font-size: 17px;
+  line-height: 21px;
+  text-align: center;
+  color: #222222;
+  margin-top: 19px;
+}
+
+/* line 142, ../../Петриченко обучение/Uber/sass/_general.sass */
+.subtitle_white {
+  color: white;
+}
+
+/* line 144, ../../Петриченко обучение/Uber/sass/_general.sass */
+.title {
+  margin-bottom: 0;
+  margin-top: 38px;
+  color: #222222;
+  font-size: 38px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 152, ../../Петриченко обучение/Uber/sass/_general.sass */
+.title_white {
+  color: white;
+}
+
+/* line 154, ../../Петриченко обучение/Uber/sass/_general.sass */
+.reasons {
+  padding: 71px 0 65px 0;
+}
+
+/* line 156, ../../Петриченко обучение/Uber/sass/_general.sass */
+.reasons_block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+}
+
+/* line 161, ../../Петриченко обучение/Uber/sass/_general.sass */
+.reasons_round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 26px;
+  width: 113px;
+  height: 113px;
+  background-color: #1eacc7;
+  border-radius: 100%;
+}
+
+/* line 170, ../../Петриченко обучение/Uber/sass/_general.sass */
+.reasons_descr {
+  width: 343px;
+}
+
+/* line 172, ../../Петриченко обучение/Uber/sass/_general.sass */
+.reasons_subtitle {
+  line-height: 21px;
+  color: #1eacc7;
+  font-size: 17px;
+  font-weight: 400;
+}
+
+/* line 177, ../../Петриченко обучение/Uber/sass/_general.sass */
+.reasons_text {
+  color: #202020;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+/* line 182, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile {
+  min-height: 864px;
+  padding: 48px 0 79px 0;
+  background: url("../img/Background/mobile_bg.png") center center/cover no-repeat;
+}
+
+/* line 186, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+/* line 193, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_1 {
+  background: url("../img/Card/Card1.png") center center/cover no-repeat;
+}
+
+/* line 195, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_2 {
+  background: url("../img/Card/Card6.png") center center/cover no-repeat;
+}
+
+/* line 197, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_3 {
+  background: url("../img/Card/Card5.png") center center/cover no-repeat;
+}
+
+/* line 199, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_4 {
+  background: url("../img/Card/Card4.png") center center/cover no-repeat;
+}
+
+/* line 201, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_5 {
+  background: url("../img/Card/Card3.png") center center/cover no-repeat;
+}
+
+/* line 203, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_6 {
+  background: url("../img/Card/Card2.png") center center/cover no-repeat;
+}
+
+/* line 205, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_subtitle {
+  font-size: 24px;
+  line-height: 31px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+/* line 211, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_plus {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translate(-50%);
+  width: 29px;
+  height: 29px;
+  background: #000000;
+  border-radius: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* line 225, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_plus:before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 2px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 232, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_plus::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  width: 2px;
+  height: 14px;
+  background-color: #1eacc7;
+  transition: 0.3s all;
+}
+
+/* line 243, ../../Петриченко обучение/Uber/sass/_general.sass */
+.mobile_item_plus:hover:before, .mobile_item_plus:hover::after {
+  background-color: #ff5656;
+}
+
+/* line 245, ../../Петриченко обучение/Uber/sass/_general.sass */
+.choice {
+  position: relative;
+  min-height: 895px;
+  background: url("../img/Background/mobile_bg.png") center center/cover no-repeat;
+  padding: 57px 0 138px 0;
+  z-index: 1;
+}
+
+/* line 251, ../../Петриченко обучение/Uber/sass/_general.sass */
+.choice_descr {
+  font-weight: 300;
+  font-size: 17px;
+  text-align: center;
+  color: #222222;
+  line-height: 24px;
+}
+
+/* line 257, ../../Петриченко обучение/Uber/sass/_general.sass */
+.choice_car {
+  position: relative;
+  display: block;
+  margin: 54px auto 0 auto;
+  z-index: 2;
+}
+
+/* line 262, ../../Петриченко обучение/Uber/sass/_general.sass */
+.choice .black {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 502px;
+  background-color: black;
+  z-index: -1;
+}
+
+/* line 270, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require {
+  padding: 68px 0 84px 0;
+}
+
+/* line 272, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require_block {
+  margin: 33px 0;
+}
+
+/* line 274, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require_block_nmb {
+  margin-bottom: 0;
+}
+
+/* line 276, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require_title {
+  font-size: 22px;
+  line-height: 24px;
+  align-items: center;
+  color: #1CA8C3;
+}
+
+/* line 281, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require_list {
+  list-style-type: none;
+  padding-left: 50px;
+  margin-top: 22px;
+}
+
+/* line 285, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require_list li {
+  position: relative;
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  color: #222222;
+  margin-bottom: 10px;
+}
+
+/* line 292, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require_list li:before {
+  content: '';
+  display: block;
+  position: absolute;
+  left: -32px;
+  top: 3px;
+  width: 21px;
+  height: 20px;
+  background: url("../icons/check_blue.png") center center/cover no-repeat;
+}
+
+/* line 301, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require_descr {
+  font-weight: 300;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  color: #1CA8C3;
+}
+
+/* line 308, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require .warning .require_title {
+  color: #ff5656;
+}
+
+/* line 312, ../../Петриченко обучение/Uber/sass/_general.sass */
+.require .warning .require_list li:before {
+  background: url("../icons/check_red.png") center center/cover no-repeat;
+}
+
+/* line 314, ../../Петриченко обучение/Uber/sass/_general.sass */
+.allworld {
+  position: relative;
+  min-height: 720px;
+  background-color: #080816;
+}
+
+/* line 318, ../../Петриченко обучение/Uber/sass/_general.sass */
+.allworld_img {
+  background: url("../img/Background/world_bg.png") center;
+  min-height: 720px;
+  padding: 51px 0 22px 0;
+}
+
+/* line 322, ../../Петриченко обучение/Uber/sass/_general.sass */
+.allworld .title {
+  margin-top: 26px;
+}
+
+/* line 324, ../../Петриченко обучение/Uber/sass/_general.sass */
+.allworld .subtitle {
+  margin-top: 0;
+}
+
+/* line 326, ../../Петриченко обучение/Uber/sass/_general.sass */
+.allworld a {
+  position: absolute;
+  bottom: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 15px;
+  line-height: 68px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #1FBAD6;
+}
+
+/* line 337, ../../Петриченко обучение/Uber/sass/_general.sass */
+footer {
+  padding: 14px 23px 39px 23px;
+}
+
+/* line 340, ../../Петриченко обучение/Uber/sass/_general.sass */
+footer a:hover {
+  text-decoration: none;
+}
+
+/* line 343, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_divider {
+  width: 299px;
+  height: 4px;
+  background-color: #1fbad6;
+  margin: 0 auto;
+}
+
+/* line 348, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 32px;
+}
+
+/* line 353, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_wrapper > div {
+  width: 33%;
+}
+
+/* line 355, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_wrapper > div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 358, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_social {
+  width: 160px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 362, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_social_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4px;
+  width: 32px;
+  height: 32px;
+  background-color: #070716;
+  border-radius: 100%;
+}
+
+/* line 371, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_social_item i {
+  color: #fff;
+}
+
+/* line 373, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_links {
+  width: 390px;
+  margin: 0 auto;
+}
+
+/* line 376, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_links_main {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+/* line 380, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_links_main a {
+  color: #070716;
+  font-size: 15px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 385, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_links_sub {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+/* line 389, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_links_sub a {
+  color: #999999;
+  font-size: 11px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 394, ../../Петриченко обучение/Uber/sass/_general.sass */
+.footer_links_lang {
+  display: block;
+  margin: 0 auto;
+  color: #1fbad6;
+  font-size: 11px;
+  font-weight: 400;
+  margin-top: 19px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* line 403, ../../Петриченко обучение/Uber/sass/_general.sass */
+.xs-visible {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  /* line 3, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu_item {
+    padding-right: 20px;
+  }
+  /* line 5, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 13px;
+  }
+  /* line 8, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 50px;
+  }
+  /* line 11, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_block {
+    align-items: flex-start;
+  }
+  /* line 13, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_descr {
+    width: 300px;
+  }
+  /* line 16, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .mobile_item {
+    width: 310px;
+  }
+  /* line 20, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 20%;
+  }
+  /* line 22, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    width: 40%;
+  }
+  /* line 24, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 20%;
+  }
+  /* line 26, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_mobile {
+    display: flex;
+    flex-direction: column;
+  }
+  /* line 29, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_mobile img {
+    margin-top: 4px;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 34, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu_item {
+    padding-right: 8px;
+  }
+  /* line 36, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 10px;
+  }
+  /* line 39, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .mobile_item {
+    width: 220px;
+  }
+  /* line 41, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .mobile_item_subtitle {
+    font-size: 23px;
+  }
+  /* line 45, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_logo img {
+    width: 100%;
+  }
+  /* line 47, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_official {
+    font-size: 11px;
+  }
+  /* line 49, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_phone {
+    font-size: 18px;
+  }
+  /* line 51, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_btn {
+    margin-top: 21px;
+    height: 40px;
+    width: 100%;
+  }
+  /* line 56, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+  }
+  /* line 58, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 60, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subtitle {
+    font-size: 14px;
+  }
+  /* line 65, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_block {
+    flex-direction: column;
+    align-items: center;
+  }
+  /* line 68, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_round {
+    margin-right: 0;
+  }
+  /* line 70, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_descr {
+    margin-top: 20px;
+  }
+  /* line 73, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .choice_car {
+    width: 100%;
+  }
+  /* line 76, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_divider {
+    width: 250px;
+  }
+  /* line 78, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_social {
+    width: 140px;
+  }
+  /* line 81, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(1) {
+    width: 15%;
+  }
+  /* line 83, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(2) {
+    width: 50%;
+  }
+  /* line 85, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .footer_wrapper > div:nth-child(3) {
+    width: 15%;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 88, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100vh;
+    padding: 20px 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    transition: 0.6s all;
+  }
+  /* line 100, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu_active {
+    left: 0;
+  }
+  /* line 102, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu_item {
+    padding-right: 0;
+    border: none;
+    margin: 10px 0;
+  }
+  /* line 106, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu_link {
+    font-size: 20px;
+  }
+  /* line 108, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .hamburger {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 26px;
+    height: 12px;
+  }
+  /* line 116, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .hamburger span {
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 2px;
+    transition: 0.6s all;
+  }
+  /* line 124, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .hamburger_active span {
+    margin-bottom: -2px;
+  }
+  /* line 126, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .hamburger_active span:nth-child(1) {
+    transform: translateY(3px) rotate(-45deg);
+  }
+  /* line 128, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .hamburger_active span:nth-child(2) {
+    display: none;
+  }
+  /* line 130, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .hamburger_active span:nth-child(3) {
+    transform: translateY(3px) rotate(45deg);
+  }
+  /* line 132, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .xs-hidden {
+    display: none;
+  }
+  /* line 134, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .xs-visible {
+    display: block;
+  }
+  /* line 137, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_phone {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+  /* line 144, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    width: 220px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 10px;
+  }
+  /* line 151, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 40px;
+    line-height: 45px;
+  }
+  /* line 154, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_subheader {
+    font-size: 30px;
+  }
+  /* line 157, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .require_title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 160, ../../Петриченко обучение/Uber/sass/_media.sass */
+  nav {
+    height: 30px;
+  }
+  /* line 162, ../../Петриченко обучение/Uber/sass/_media.sass */
+  header {
+    height: 30px;
+  }
+  /* line 165, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader {
+    height: 60px;
+    top: 30px;
+  }
+  /* line 168, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_official {
+    display: none;
+  }
+  /* line 170, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_logo {
+    margin-top: 16px;
+  }
+  /* line 172, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_phone {
+    font-size: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-top: 11px;
+  }
+  /* line 178, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .subheader_btn {
+    display: block;
+    font-size: 10px;
+    width: 110px;
+    height: 22px;
+    margin: 0 auto;
+    margin-top: 9px;
+  }
+  /* line 185, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo {
+    min-height: 400px;
+    padding: 73px 0 35px 0;
+  }
+  /* line 188, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_header {
+    font-size: 30px;
+    padding: 0 24px;
+    line-height: 35px;
+  }
+  /* line 192, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_subheader {
+    font-size: 20px;
+    margin-top: 33px;
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  /* line 197, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_descr {
+    display: none;
+  }
+  /* line 199, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .promo_btn {
+    width: 210px;
+    height: 50px;
+    margin-top: 72px;
+  }
+  /* line 203, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .menu {
+    width: 85%;
+  }
+  font-size: 16px;
+  margin-top: 15px;
+  line-height: 16px;
+  /* line 209, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons {
+    padding: 22px 0 36px 0;
+  }
+  /* line 211, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_block {
+    margin-top: 26px;
+  }
+  /* line 213, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_round {
+    width: 100px;
+    height: 100px;
+  }
+  /* line 216, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_descr {
+    width: 100%;
+    margin-top: 27px;
+  }
+  /* line 219, ../../Петриченко обучение/Uber/sass/_media.sass */
+  .reasons_subtitle {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
